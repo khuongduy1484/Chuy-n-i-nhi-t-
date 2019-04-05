@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập nhiệt đô </p>
+<input type="number"id="number1"onchange="temperature(this.value)" oninput="temperature(this.value)" name="temperature">
+<div id="result"></div>
+<script>
+   function temperature() {
+       let a=document.getElementById('number1').value;
+       document.getElementById('result').innerHTML=a*(3*1.8 -32);
+
+   }
+</script>
+</body>
+</html>
